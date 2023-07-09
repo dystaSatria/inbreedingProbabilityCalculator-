@@ -1,3 +1,3 @@
 
 
-![](https://github.com/emresaridogan/flutter-modern-calculator/blob/master/assets/images/app.png)
+![](https://github.com/dystaSatria/inbreedingProbabilityCalculator-/blob/main/photo/Screenshot%20(623).png)
