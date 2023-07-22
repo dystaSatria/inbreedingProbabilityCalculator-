@@ -1,0 +1,255 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.navlist{
+    display: flex;
+
+}
+
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    
+    border-bottom: 2px solid white;
+    
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background : linear-gradient(245.59deg, #0a501e 0%, #182519 28.53%, #1d2c1e 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+
+  
+
+body{
+    background : linear-gradient(245.59deg, #0a501e 0%, #182519 28.53%, #1d2c1e 75.52%);
+
+}
+
+section{
+    padding: 0 19%;
+}
+
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h1{
+    font-family: 'Poppins', cursive;
+    font-size: 30px;
+    line-height: 1;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+.hero-text p{
+    color: white;
+    font-size: 12px; 
+}
+
+.hero img{
+    width: 500px;
+    height: auto;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background-color: #060c08;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover{
+
+    background: transparent;
+    border: 1px solid white;
+    transform:  translateX(10px);
+}
+
+@media (max-width : 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+         
+    }
+
+}
+
+@media (max-width : 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+         
+    }
+
+}
+
+@media (max-width : 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+        
+    }
+
+    .hero-text h1{
+        font-size: 50px;
+        margin: 0 0 30px;
+    }
+    
+
+}
+
+@media (max-width : 1195px){
+    section {
+        padding: 0 3%;
+        transition: .2s;
+    }
+
+    .hero-text{
+        padding-top: 115px;
+        text-align: center;
+    }
+    .hero-img{
+        text-align: center;
+    }
+
+    .hero-img img{
+        width: 560px;
+        height: auto;
+    }
+
+    .hero{
+        height: 100%;
+        gap : 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    
+
+
+
+}
+
+@media (max-width : 995px){
+
+    #menu-icon{
+        display: block;
+    }
+
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 450px;
+        height: 40vh;
+        background : transparent;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;        
+        transition: all .55s ease;
+        border-radius:20px;
+
+    }
+
+    .navlist a{
+
+        margin-left: 0 ;
+        display: block;
+        margin: 5px 0 ;
+        
+    }
+
+    .navlist.open{
+        right: 0;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+}
+
+@media (max-width : 695px)
+{
+    .hero-img img{
+        width: 100%;
+        height: auto;
+         
+    }
+    .hero-text {
+        text-align: center;
+        padding-top: 90px;
+    }
+}
+
+.footer{
+    background : transparent;
+    
+    text-align: center;
+  }
+
+  .footer h3{
+    font-family: 'Times New Roman', Times, serif;
+  }
